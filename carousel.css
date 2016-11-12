@@ -1,0 +1,41 @@
+#carousel {
+    border: solid 5px #e7dbc5;
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 200px;
+}
+
+.nav {
+    position: absolute;
+    bottom: 100px;
+    width: 700px;
+}
+
+#right {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    cursor: pointer;
+    width: 70px;
+    height: 90px;
+    background: url(right-arrow.png) no-repeat top left;
+}
+
+#left {
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    cursor: pointer;
+    width: 70px;
+    height: 90px;
+    background: url(left-arrow.png) no-repeat top right;
+}
