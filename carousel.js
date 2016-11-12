@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var img_slider = {
-        images: ['img/1.jpeg', 'img/2.jpeg', 'img/3.jpeg']
+        images: ['img/1.jpeg', 'img/2.jpeg', 'img/3.jpeg','img/4.jpeg']
     };
 
     var i = 0;
@@ -13,6 +13,7 @@ $(document).ready(function() {
             $("#0").attr("src", img_slider.images[0]);
             $("#1").attr("src", img_slider.images[1]);
             $("#2").attr("src", img_slider.images[2]);
+            $("#3").attr("src", img_slider.images[3]);
         });
         i++;
     }
