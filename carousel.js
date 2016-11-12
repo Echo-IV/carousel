@@ -34,12 +34,16 @@ $(document).ready(function() {
             img.css('display', 'none');
             currentImg = img.eq(i);
             currentImg.fadeIn();
+                clearTimeout(time);
+                slideImg();
 
         } else {
             i = 0;
             img.css('display', 'none');
             currentImg = img.eq(i);
             currentImg.fadeIn();
+                clearTimeout(time);
+                slideImg();
         }
     });
 
@@ -50,6 +54,8 @@ $(document).ready(function() {
             img.css('display', 'none');
             currentImg = img.eq(i);
             currentImg.fadeIn();
+            clearTimeout(time);
+            slideImg();
 
 
         } else {
@@ -57,12 +63,16 @@ $(document).ready(function() {
             img.css('display', 'none');
             currentImg = img.eq(i);
             currentImg.fadeIn();
+            clearTimeout(time);
+            slideImg();
         }
     });
 
+    var time;
+
     function slideImg() {
 
-        setTimeout(function() {
+    time = setTimeout(function() {
 
             if (i < indexImg) {
                 i++;
@@ -76,6 +86,15 @@ $(document).ready(function() {
             currentImg.fadeIn();
             slideImg();
         }, 3000);
+
+
+
+
+
     }
+
+
+
+
     slideImg();
 });
